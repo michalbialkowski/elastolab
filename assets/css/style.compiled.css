@@ -24341,10 +24341,16 @@ https://flickity.metafizzy.co
 .flickity--slider.flickity--slider--dark .flickity-prev-next-button svg * {
   fill: white;
 }
+.flickity--slider.mx-n4 .flickity-prev-next-button.previous {
+  left: 12px;
+}
+.flickity--slider.mx-n4 .flickity-prev-next-button.next {
+  right: 12px;
+}
 .flickity--slider .flickity-prev-next-button {
   background: transparent;
   top: auto;
-  bottom: -75px;
+  bottom: -85px;
 }
 .flickity--slider .flickity-prev-next-button.previous {
   left: -10px;
