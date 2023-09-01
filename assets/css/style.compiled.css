@@ -7570,11 +7570,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-white {
+.link-white, body.bg-darkgray header .link-menu, body.bg-darkgray header .links .btn, body.bg-darkgray header .menu a, body.bg-cols header .link-menu, body#section_main_hero header .link-menu, body.bg-cols body#section_header_main header .link-menu, body.bg-cols header .menu a, body#section_main_hero header .menu a, body.bg-cols body#section_header_main header .menu a {
   color: RGBA(var(--bs-white-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-white:hover, .link-white:focus {
+.link-white:hover, body.bg-darkgray header .link-menu:hover, body.bg-darkgray header .links .btn:hover, body.bg-darkgray header .menu a:hover, body.bg-cols header .link-menu:hover, body#section_main_hero header .link-menu:hover, body.bg-cols body#section_header_main header .link-menu:hover, body.bg-cols header .menu a:hover, body#section_main_hero header .menu a:hover, body.bg-cols body#section_header_main header .menu a:hover, .link-white:focus, body.bg-darkgray header .link-menu:focus, body.bg-darkgray header .links .btn:focus, body.bg-darkgray header .menu a:focus, body.bg-cols header .link-menu:focus, body#section_main_hero header .link-menu:focus, body.bg-cols body#section_header_main header .link-menu:focus, body.bg-cols header .menu a:focus, body#section_main_hero header .menu a:focus, body.bg-cols body#section_header_main header .menu a:focus {
   color: RGBA(255, 255, 255, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
 }
@@ -7597,11 +7597,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(229, 233, 233, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-darkgray {
+.link-darkgray, body header .menu a {
   color: RGBA(var(--bs-darkgray-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-darkgray-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-darkgray:hover, .link-darkgray:focus {
+.link-darkgray:hover, body header .menu a:hover, .link-darkgray:focus, body header .menu a:focus {
   color: RGBA(23, 24, 26, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(23, 24, 26, var(--bs-link-underline-opacity, 1)) !important;
 }
@@ -25193,15 +25193,15 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 991.98px) {
-  .bg-cols, #section_main_hero, #section_header_main {
+  .bg-cols, #section_main_hero, body#section_main_hero #section_header_main, body.bg-cols #section_header_main {
     background: #1d1e20;
   }
 }
 @media (min-width: 992px) {
-  .bg-cols, #section_main_hero, #section_header_main {
+  .bg-cols, #section_main_hero, body#section_main_hero #section_header_main, body.bg-cols #section_header_main {
     position: relative;
   }
-  .bg-cols::before, #section_main_hero::before, #section_header_main::before, .bg-cols::after, #section_main_hero::after, #section_header_main::after {
+  .bg-cols::before, #section_main_hero::before, body#section_main_hero #section_header_main::before, body.bg-cols #section_header_main::before, .bg-cols::after, #section_main_hero::after, body#section_main_hero #section_header_main::after, body.bg-cols #section_header_main::after {
     content: "";
     position: absolute;
     top: 0;
@@ -25209,34 +25209,43 @@ body.compensate-for-scrollbar {
     width: 50%;
     z-index: -10;
   }
-  .bg-cols::before, #section_main_hero::before, #section_header_main::before {
+  .bg-cols::before, #section_main_hero::before, body#section_main_hero #section_header_main::before, body.bg-cols #section_header_main::before {
     left: 0;
     background: #1d1e20;
   }
-  .bg-cols::after, #section_main_hero::after, #section_header_main::after {
+  .bg-cols::after, #section_main_hero::after, body#section_main_hero #section_header_main::after, body.bg-cols #section_header_main::after {
     right: 0;
     background: #9ba38e;
   }
-  .bg-cols > .container > div, #section_main_hero > .container > div, #section_header_main > .container > div {
+  .bg-cols > .container > div, #section_main_hero > .container > div, body#section_main_hero #section_header_main > .container > div, body.bg-cols #section_header_main > .container > div, body#section_main_hero body#section_header_main #section_header_main > .container > div {
     position: relative;
   }
-  .bg-cols > .container > div::before, #section_main_hero > .container > div::before, #section_header_main > .container > div::before, .bg-cols > .container > div::after, #section_main_hero > .container > div::after, #section_header_main > .container > div::after {
+  .bg-cols > .container > div::before, #section_main_hero > .container > div::before, body#section_main_hero #section_header_main > .container > div::before, body.bg-cols #section_header_main > .container > div::before, body#section_main_hero body#section_header_main #section_header_main > .container > div::before, .bg-cols > .container > div::after, #section_main_hero > .container > div::after, body#section_main_hero #section_header_main > .container > div::after, body.bg-cols #section_header_main > .container > div::after, body#section_main_hero body#section_header_main #section_header_main > .container > div::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     z-index: -1;
   }
-  .bg-cols > .container > div::before, #section_main_hero > .container > div::before, #section_header_main > .container > div::before {
+  .bg-cols > .container > div::before, #section_main_hero > .container > div::before, body#section_main_hero #section_header_main > .container > div::before, body.bg-cols #section_header_main > .container > div::before, body#section_main_hero body#section_header_main #section_header_main > .container > div::before {
     left: 0;
     width: 68.5%;
     background: #1d1e20;
   }
-  .bg-cols > .container > div::after, #section_main_hero > .container > div::after, #section_header_main > .container > div::after {
+  .bg-cols > .container > div::after, #section_main_hero > .container > div::after, body#section_main_hero #section_header_main > .container > div::after, body.bg-cols #section_header_main > .container > div::after, body#section_main_hero body#section_header_main #section_header_main > .container > div::after {
     right: 0;
     width: 31.5%;
     background: #9ba38e;
   }
+}
+body header .logo * {
+  fill: #1d1e20;
+}
+body.bg-cols header .logo *, body#section_main_hero header .logo *, body.bg-cols body#section_header_main header .logo * {
+  fill: #fff;
+}
+body.bg-darkgray header .logo * {
+  fill: #fff;
 }
 .links-primary a {
   color: #0d6efd;
