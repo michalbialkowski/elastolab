@@ -24338,6 +24338,20 @@ https://flickity.metafizzy.co
   display: flex;
 }
 
+.flickity--slider.flickity--slider--dark .flickity-prev-next-button svg * {
+  fill: white;
+}
+.flickity--slider .flickity-prev-next-button {
+  background: transparent;
+  top: auto;
+  bottom: -75px;
+}
+.flickity--slider .flickity-prev-next-button.previous {
+  left: -10px;
+}
+.flickity--slider .flickity-prev-next-button.next {
+  right: -10px;
+}
 .flickity--slider.hide--arrows .flickity-prev-next-button {
   display: none;
 }
