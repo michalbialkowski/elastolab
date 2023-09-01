@@ -740,7 +740,7 @@ progress {
   color: var(--bs-secondary-color);
 }
 
-.container,
+.container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -757,27 +757,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container {
+  .container-sm, .container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
+  .container-md, .container-sm, .container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
+  .container-lg, .container-md, .container-sm, .container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
     max-width: 1320px;
   }
 }
@@ -4560,7 +4560,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
-.navbar > .container,
+.navbar > .container, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .navbar > .accordion-body, .accordion.accordion-fullwidth .accordion-item .accordion-header .navbar > .accordion-button,
 .navbar > .container-fluid,
 .navbar > .container-sm,
 .navbar > .container-md,
@@ -7572,11 +7572,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-white, body.bg-darkgray header .link-menu, body.bg-darkgray header .links .btn, body.bg-darkgray header .menu a, body.bg-cols header .link-menu, body#section_main_hero header .link-menu, body.bg-cols body#section_header_main header .link-menu, body.bg-cols header .menu a, body#section_main_hero header .menu a, body.bg-cols body#section_header_main header .menu a {
+.link-white, body.bg-darkgray header .link-menu, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .link-menu, body.bg-darkgray header .links .btn, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .links .btn, body.bg-darkgray header .menu a, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .menu a, body.bg-cols header .link-menu, body#section_main_hero header .link-menu, body.bg-cols body#section_header_main header .link-menu, body.bg-cols header .menu a, body#section_main_hero header .menu a, body.bg-cols body#section_header_main header .menu a {
   color: RGBA(var(--bs-white-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-white:hover, body.bg-darkgray header .link-menu:hover, body.bg-darkgray header .links .btn:hover, body.bg-darkgray header .menu a:hover, body.bg-cols header .link-menu:hover, body#section_main_hero header .link-menu:hover, body.bg-cols body#section_header_main header .link-menu:hover, body.bg-cols header .menu a:hover, body#section_main_hero header .menu a:hover, body.bg-cols body#section_header_main header .menu a:hover, .link-white:focus, body.bg-darkgray header .link-menu:focus, body.bg-darkgray header .links .btn:focus, body.bg-darkgray header .menu a:focus, body.bg-cols header .link-menu:focus, body#section_main_hero header .link-menu:focus, body.bg-cols body#section_header_main header .link-menu:focus, body.bg-cols header .menu a:focus, body#section_main_hero header .menu a:focus, body.bg-cols body#section_header_main header .menu a:focus {
+.link-white:hover, body.bg-darkgray header .link-menu:hover, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .link-menu:hover, body.bg-darkgray header .links .btn:hover, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .links .btn:hover, body.bg-darkgray header .menu a:hover, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .menu a:hover, body.bg-cols header .link-menu:hover, body#section_main_hero header .link-menu:hover, body.bg-cols body#section_header_main header .link-menu:hover, body.bg-cols header .menu a:hover, body#section_main_hero header .menu a:hover, body.bg-cols body#section_header_main header .menu a:hover, .link-white:focus, body.bg-darkgray header .link-menu:focus, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .link-menu:focus, body.bg-darkgray header .links .btn:focus, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .links .btn:focus, body.bg-darkgray header .menu a:focus, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .menu a:focus, body.bg-cols header .link-menu:focus, body#section_main_hero header .link-menu:focus, body.bg-cols body#section_header_main header .link-menu:focus, body.bg-cols header .menu a:focus, body#section_main_hero header .menu a:focus, body.bg-cols body#section_header_main header .menu a:focus {
   color: RGBA(255, 255, 255, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
 }
@@ -8204,7 +8204,7 @@ textarea.form-control-lg {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-0, .card.card-blank {
+.border-0, .accordion.accordion-fullwidth .accordion-item, .card.card-blank {
   border: 0 !important;
 }
 
@@ -8212,7 +8212,8 @@ textarea.form-control-lg {
   border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-top-0 {
+.border-top-0, form .form-control,
+form .form-select {
   border-top: 0 !important;
 }
 
@@ -8220,7 +8221,8 @@ textarea.form-control-lg {
   border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-end-0 {
+.border-end-0, form .form-control,
+form .form-select {
   border-right: 0 !important;
 }
 
@@ -8236,7 +8238,8 @@ textarea.form-control-lg {
   border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-start-0 {
+.border-start-0, form .form-control,
+form .form-select {
   border-left: 0 !important;
 }
 
@@ -8290,7 +8293,7 @@ textarea.form-control-lg {
   border-color: rgba(var(--bs-black-rgb), var(--bs-border-opacity)) !important;
 }
 
-.border-lightgray, body.bg-darkgray header .links .btn-group.border-start {
+.border-lightgray, body.bg-darkgray header .links .btn-group.border-start, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .links .btn-group.border-start {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-lightgray-rgb), var(--bs-border-opacity)) !important;
 }
@@ -8461,7 +8464,7 @@ textarea.form-control-lg {
   min-height: 100vh !important;
 }
 
-.flex-fill, #section_main_hero > .container > div > div {
+.flex-fill, #section_main_hero > .container > div > div, .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_main_hero > .accordion-body > div > div, .accordion.accordion-fullwidth .accordion-item .accordion-header #section_main_hero > .accordion-button > div > div {
   flex: 1 1 auto !important;
 }
 
@@ -9017,7 +9020,8 @@ textarea.form-control-lg {
   padding: 3rem !important;
 }
 
-.px-0 {
+.px-0, form .form-control,
+form .form-select {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
@@ -9067,7 +9071,7 @@ textarea.form-control-lg {
   padding-bottom: 1rem !important;
 }
 
-.py-4 {
+.py-4, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -9257,7 +9261,7 @@ textarea.form-control-lg {
   font-size: calc(1.325rem + 0.9vw) !important;
 }
 
-.fs-3 {
+.fs-3, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
 
@@ -9301,7 +9305,7 @@ textarea.form-control-lg {
   font-weight: 600 !important;
 }
 
-.fw-bold {
+.fw-bold, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
   font-weight: 700 !important;
 }
 
@@ -9353,7 +9357,7 @@ textarea.form-control-lg {
   text-transform: lowercase !important;
 }
 
-.text-uppercase, .btn {
+.text-uppercase, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button, .btn {
   text-transform: uppercase !important;
 }
 
@@ -9421,7 +9425,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-black {
+.text-black, .accordion.accordion-fullwidth .accordion-item {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
@@ -9791,7 +9795,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-white {
+.bg-white, .accordion.accordion-fullwidth .accordion-item {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9806,7 +9810,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-lightgray-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-darkgray {
+.bg-darkgray, .accordion.accordion-fullwidth .accordion-item .accordion-header {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-darkgray-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9841,7 +9845,8 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-transparent, .card.card-blank {
+.bg-transparent, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button, form .form-control,
+form .form-select, .card.card-blank {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
 }
@@ -13508,7 +13513,7 @@ textarea.form-control-lg {
   .fs-2 {
     font-size: 2rem !important;
   }
-  .fs-3 {
+  .fs-3, .accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button {
     font-size: 1.75rem !important;
   }
   .fs-4 {
@@ -19604,12 +19609,14 @@ h1,
 
 .pt--50,
 .py--50,
+.accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body,
 .p--50 {
   padding-top: 50px !important;
 }
 
 .pb--50,
 .py--50,
+.accordion.accordion-fullwidth .accordion-item .accordion-collapse .accordion-body,
 .p--50 {
   padding-bottom: 50px !important;
 }
@@ -25258,22 +25265,22 @@ body.compensate-for-scrollbar {
     right: 0;
     background: #9ba38e;
   }
-  .bg-cols > .container > div, #section_main_hero > .container > div, body#section_main_hero #section_header_main > .container > div, body.bg-cols #section_header_main > .container > div, body#section_main_hero body#section_header_main #section_header_main > .container > div {
+  .bg-cols > .container > div, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .bg-cols > .accordion-body > div, .accordion.accordion-fullwidth .accordion-item .accordion-header .bg-cols > .accordion-button > div, #section_main_hero > .container > div, .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_main_hero > .accordion-body > div, .accordion.accordion-fullwidth .accordion-item .accordion-header #section_main_hero > .accordion-button > div, body#section_main_hero #section_header_main > .container > div, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero #section_header_main > .accordion-body > div, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero #section_header_main > .accordion-button > div, body.bg-cols #section_header_main > .container > div, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body.bg-cols #section_header_main > .accordion-body > div, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div, .accordion.accordion-fullwidth .accordion-item .accordion-header body.bg-cols #section_header_main > .accordion-button > div, body#section_main_hero body#section_header_main #section_header_main > .container > div, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero body#section_header_main #section_header_main > .accordion-body > div, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero body#section_header_main #section_header_main > .accordion-button > div {
     position: relative;
   }
-  .bg-cols > .container > div::before, #section_main_hero > .container > div::before, body#section_main_hero #section_header_main > .container > div::before, body.bg-cols #section_header_main > .container > div::before, body#section_main_hero body#section_header_main #section_header_main > .container > div::before, .bg-cols > .container > div::after, #section_main_hero > .container > div::after, body#section_main_hero #section_header_main > .container > div::after, body.bg-cols #section_header_main > .container > div::after, body#section_main_hero body#section_header_main #section_header_main > .container > div::after {
+  .bg-cols > .container > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .bg-cols > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header .bg-cols > .accordion-button > div::before, #section_main_hero > .container > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_main_hero > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header #section_main_hero > .accordion-button > div::before, body#section_main_hero #section_header_main > .container > div::before, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero #section_header_main > .accordion-body > div::before, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero #section_header_main > .accordion-button > div::before, body.bg-cols #section_header_main > .container > div::before, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body.bg-cols #section_header_main > .accordion-body > div::before, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header body.bg-cols #section_header_main > .accordion-button > div::before, body#section_main_hero body#section_header_main #section_header_main > .container > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero body#section_header_main #section_header_main > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero body#section_header_main #section_header_main > .accordion-button > div::before, .bg-cols > .container > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .bg-cols > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header .bg-cols > .accordion-button > div::after, #section_main_hero > .container > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_main_hero > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header #section_main_hero > .accordion-button > div::after, body#section_main_hero #section_header_main > .container > div::after, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero #section_header_main > .accordion-body > div::after, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero #section_header_main > .accordion-button > div::after, body.bg-cols #section_header_main > .container > div::after, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body.bg-cols #section_header_main > .accordion-body > div::after, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header body.bg-cols #section_header_main > .accordion-button > div::after, body#section_main_hero body#section_header_main #section_header_main > .container > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero body#section_header_main #section_header_main > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero body#section_header_main #section_header_main > .accordion-button > div::after {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     z-index: -1;
   }
-  .bg-cols > .container > div::before, #section_main_hero > .container > div::before, body#section_main_hero #section_header_main > .container > div::before, body.bg-cols #section_header_main > .container > div::before, body#section_main_hero body#section_header_main #section_header_main > .container > div::before {
+  .bg-cols > .container > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .bg-cols > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header .bg-cols > .accordion-button > div::before, #section_main_hero > .container > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_main_hero > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header #section_main_hero > .accordion-button > div::before, body#section_main_hero #section_header_main > .container > div::before, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero #section_header_main > .accordion-body > div::before, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero #section_header_main > .accordion-button > div::before, body.bg-cols #section_header_main > .container > div::before, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body.bg-cols #section_header_main > .accordion-body > div::before, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header body.bg-cols #section_header_main > .accordion-button > div::before, body#section_main_hero body#section_header_main #section_header_main > .container > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero body#section_header_main #section_header_main > .accordion-body > div::before, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero body#section_header_main #section_header_main > .accordion-button > div::before {
     left: 0;
     width: 68.5%;
     background: #1d1e20;
   }
-  .bg-cols > .container > div::after, #section_main_hero > .container > div::after, body#section_main_hero #section_header_main > .container > div::after, body.bg-cols #section_header_main > .container > div::after, body#section_main_hero body#section_header_main #section_header_main > .container > div::after {
+  .bg-cols > .container > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse .bg-cols > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header .bg-cols > .accordion-button > div::after, #section_main_hero > .container > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_main_hero > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header #section_main_hero > .accordion-button > div::after, body#section_main_hero #section_header_main > .container > div::after, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero #section_header_main > .accordion-body > div::after, body#section_main_hero .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero #section_header_main > .accordion-button > div::after, body.bg-cols #section_header_main > .container > div::after, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-collapse #section_header_main > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body.bg-cols #section_header_main > .accordion-body > div::after, body.bg-cols .accordion.accordion-fullwidth .accordion-item .accordion-header #section_header_main > .accordion-button > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header body.bg-cols #section_header_main > .accordion-button > div::after, body#section_main_hero body#section_header_main #section_header_main > .container > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-collapse body#section_main_hero body#section_header_main #section_header_main > .accordion-body > div::after, .accordion.accordion-fullwidth .accordion-item .accordion-header body#section_main_hero body#section_header_main #section_header_main > .accordion-button > div::after {
     right: 0;
     width: 31.5%;
     background: #9ba38e;
@@ -25285,7 +25292,7 @@ body header .logo * {
 body.bg-cols header .logo *, body#section_main_hero header .logo *, body.bg-cols body#section_header_main header .logo * {
   fill: #fff;
 }
-body.bg-darkgray header .logo * {
+body.bg-darkgray header .logo *, .accordion.accordion-fullwidth .accordion-item body.accordion-header header .logo * {
   fill: #fff;
 }
 .links-primary a {
@@ -25358,4 +25365,22 @@ body.bg-darkgray header .logo * {
 
 .links-decoration-none a {
   text-decoration: none;
+}
+
+form .form-control,
+form .form-select {
+  outline: none;
+  box-shadow: none;
+}
+form .form-control:focus,
+form .form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+form .form-select {
+  background-position-x: 100%, calc(100% - 24px);
+}
+
+.accordion.accordion-fullwidth .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
 }
